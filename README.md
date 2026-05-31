@@ -57,8 +57,8 @@ project/
 
 1) Clone the repository:
 ```
-git clone <your-repo-url>
-cd <repo-folder>
+git clone https://github.com/mgg143/weather-scraping-dashboard.git
+cd weather-scraping-dashboard
 ```
 
 2) Create and activate a virtual environment:
