@@ -1,8 +1,54 @@
-selenium
-webdriver-manager
-pandas
+# ==============================================================================
+# PROJECT DEPENDENCIES (requirements.txt)
+# ==============================================================================
+# This file lists every external Python library required to run this project.
+# To install all of these packages into your local environment at once, run:
+#
+#    pip install -r requirements.txt
+#
+# 💡 BEGINNER'S GUIDE TO VERSION SYMBOLS:
+#    - Package==1.0.0 : Strict Lock. Forces pip to install this exact version
+#                       so future global updates don't break our working code.
+#    - Package>=1.0.0 : Minimum Lock. Allows newer updates, but guarantees the
+#                       code won't drop below this specific baseline version.
+#    - Package        : Unpinned. Tells pip to just grab the absolute latest
+#                       stable release available on the internet today.
+# ==============================================================================
+
+# 🌐 Web Scraping & Automation
+# ------------------------------------------------------------------------------
+# Selenium boots up and manages our background browser engine (Firefox) to 
+# programmatically click links and harvest dynamic layout data from the web.
+selenium==4.21.0
+
+# 📊 Data Manipulation & Engineering
+# ------------------------------------------------------------------------------
+# Pandas gives us powerful spreadsheet-like "DataFrames" to cleanly filter out 
+# missing rows, fix data types, and prepare text structures for the database.
+pandas==2.2.2
+
+# 🎨 Interactive Application Framework
+# ------------------------------------------------------------------------------
+# Streamlit serves as our primary web framework. It allows us to turn our 
+# back-end data scripts into a functional browser-based user dashboard application.
 streamlit
-requests
-beautifulsoup4
-lxml
-python-dotenv
+
+# 🗺️ Data Visualization & Mapping Engines
+# ------------------------------------------------------------------------------
+# These three graphics packages handle rendering the visual elements inside 
+# the Streamlit layout app.
+
+# Altair handles automated statistical charts and bar graphs.
+altair==5.2.0
+
+# Pydeck builds the advanced, high-performance map visualizations on the page.
+pydeck==0.8.1b0
+
+# Plotly produces the fully interactive, hover-responsive graph charts.
+plotly>=5.18.0
+
+# 🖼️ Asset & Image Processing
+# ------------------------------------------------------------------------------
+# Pillow (the Python Imaging Library) provides the background engine for 
+# rendering custom images, layout logos, and favicons within the UI app.
+pillow
